@@ -5,5 +5,5 @@ admin panel:<br>
 username: mihoyo <br>
 password: genshin2024 <br>
 
-author: scary_spark
+author: scary_spark <br>
 finalized date: 10/12/2024
