@@ -1,6 +1,9 @@
 # dsPoject
 Fall 2024
 <br>
-admin panel:
-username: mihoyo
-password: genshin2024
+admin panel:<br>
+username: mihoyo <br>
+password: genshin2024 <br>
+
+author: scary_spark
+finalized date: 10/12/2024
