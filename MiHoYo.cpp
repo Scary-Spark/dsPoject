@@ -172,6 +172,26 @@ public:
         cartItemHead = cartItemHead->nextItem;
         delete itemTemp;
     }
+    void printCart() {
+    cartItem *currentItem = cartItemHead;
+    cout << "===================================================\n";
+    cout << "||                MiHoYo Daily Goods             ||\n";
+    cout << "||            Buy Online Save Your Time          ||\n";
+    cout << "===================================================\n";
+
+    while (currentItem != nullptr) {
+        cout << "  " << currentItem->itemName << ":\n"
+             << "\t\tOrdered Amount (kg/unit): " << currentItem->orderddAmount << "\n"
+             << "\t\tTotal Cost              : $ " << currentItem->orderedPrice << "\n"
+             << "\t\tRegion                  : " << currentItem->region << "\n"
+             << "\t\tLocation                : " << currentItem->location << "\n"
+             << "===================================================\n\n";
+        currentItem = currentItem->nextItem;
+    }
+    cout << "Press Enter to Continue...\n";
+    cin.get();
+}
+
 };
 cartUser *cartHead;
 
@@ -3958,6 +3978,7 @@ void userViewCart(string userName)
         system("cls");
         userInterFace(userName);
     }
+    tempCartUser->printCart();
     int selected = userCartButton(tempCartUser);
     cartItem *tempItem = tempCartUser->cartItemHead;
     catagory *tempCat2 = catHead;
